@@ -1,0 +1,357 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+:root {
+    --main-color:bisque;
+    --text-color:black;
+    --bg-color:bisque;
+    --big-font:5rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+
+* ::selection{
+    background: var(--main-color);
+    color:black;
+}
+/* body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}  */
+
+/* header */
+.navigation {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  background-color:rgb(245, 223, 220);
+  grid-auto-flow: column;
+}
+
+ /* .brand-logo {
+object-fit: cover;
+  width: 155px;
+  height: 80px;
+  background-image: linear-gradient(to right,white, azure); 
+  place-content: center;
+}  */
+
+.link-list {
+  font-size: 18px;
+  display: grid;
+  justify-content: end;
+  padding-right: 24px;
+  grid-auto-flow: column;
+  gap: 30px;
+}
+
+.link-list a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+/*  */
+.parallax-text-container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+   
+    .parallax-text-container-1{
+    width: auto;
+    height:100px;
+    text-align: center;
+
+    }
+    .parallax-text-container-1 p {
+      animation: slideInLeft 1s linear 1 normal both;
+        transform:translateX(-50px);
+      font-size: 20px;
+      text-align: center;
+      margin-top: 10px;
+      font-family: 'Roboto';
+
+      }
+      @keyframes slideInLeft{
+        from{
+            transform:translateX(-1000px);
+        }
+        to{
+            transform: translateX(0);
+        }
+      }
+      
+  
+  section.module:last-child {
+    margin-bottom: 0;
+  }
+  
+  section.module.content {
+    padding: 40px 0;
+  }
+  
+  section.module.parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  section.module.parallax h1 {
+    color: bisque;
+    font-size: 48px;
+    line-height: 600px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  section.module.dream {
+    background-image: url("booking1.jpg");
+  }
+  
+  section.module.challenge {
+    background-image: url("https://images.unsplash.com/photo-1432821596592-e2c18b78144f?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1325");
+  }
+  
+ 
+/*  */
+
+/*  */
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	height: 180px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container img {
+	display: block;
+	margin: 0 auto 20px;
+	width: auto;
+	height: 170px;
+  }
+
+form {
+	margin:0% auto 0 auto;
+	padding:10px;
+	width:400px;
+	height:600px;
+	overflow:hidden;
+	background:white;
+	border-radius:5px;
+}
+
+form label {
+	font-size:14px;
+	color:darkgray;
+	cursor:pointer;
+}
+
+form label,
+form input {
+	float:left;
+	clear:both;
+}
+
+form input {
+	margin:15px 0;
+	padding:15px 10px;
+	width:100%;
+	outline:none;
+	border:1px solid #bbb;
+	border-radius:20px;
+	display:inline-block;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+    -webkit-transition:0.2s ease all;
+	   -moz-transition:0.2s ease all;
+	    -ms-transition:0.2s ease all;
+	     -o-transition:0.2s ease all;
+	        transition:0.2s ease all;
+}
+
+form input[type=text]:focus,
+form input[type="password"]:focus {
+	border-color:cornflowerblue;
+}
+
+input[type=submit] {
+	padding:15px 50px;
+	width:auto;
+	background:#1abc9c;
+	border:none;
+	color:white;
+	cursor:pointer;
+	display:inline-block;
+	
+	clear:right;
+	-webkit-transition:0.2s ease all;
+	   -moz-transition:0.2s ease all;
+	    -ms-transition:0.2s ease all;
+	     -o-transition:0.2s ease all;
+	        transition:0.2s ease all;
+}
+
+input[type=submit]:hover {
+	opacity:0.8;
+}
+
+input[type="submit"]:active {
+	opacity:0.4;
+}
+
+
+
+#logo {
+	margin:0 auto;
+	width:200px;
+	font-family:'Lily Script One', cursive;
+	font-size:60px;
+	font-weight:bold;
+	text-align:center;
+	color:lightgray;
+	-webkit-transition:0.2s ease all;
+	   -moz-transition:0.2s ease all;
+	    -ms-transition:0.2s ease all;
+	     -o-transition:0.2s ease all;
+	        transition:0.2s ease all;
+}
+
+#logo:hover {
+	color:cornflowerblue;
+}
+.bare{
+  height: 600px;
+}
+
+.footer {
+	width: 100%;
+	 /* position: static; */
+  margin-bottom: 0;
+  /* position: fixed; */
+  bottom: 0;
+	height: auto;
+	background-color: black;
+  }
+  .footer .col {
+	width: 190px;
+	height: auto;
+	float: left;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0px 20px 20px 20px;
+  }
+  .footer .col h1 {
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	font-size: 12px;
+	line-height: 17px;
+	padding: 20px 0px 5px 0px;
+	color: rgba(255,255,255,0.2);
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.250em;
+  }
+  .footer .col ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  .footer .col ul li {
+	color: #999999;
+	font-size: 14px;
+	font-family: inherit;
+	font-weight: bold;
+	padding: 5px 0px 5px 0px;
+	cursor: pointer;
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+  }
+  .social ul li {
+	display: inline-block;
+	padding-right: 5px !important;
+  }
+  
+  .footer .col ul li:hover {
+	color: #ffffff;
+	transition: .1s;
+	-webkit-transition: .1s;
+	-moz-transition: .1s;
+  }
+  .clearfix {
+	clear: both;
+  }
+  @media only screen and (min-width: 1280px) {
+	.contain {
+	  width: 1200px;
+	  margin: 0 auto;
+	}
+  }
+  @media only screen and (max-width: 1139px) {
+	.contain .social {
+	  width: 1000px;
+	  display: block;
+	}
+	.social h1 {
+	  margin: 0px;
+	}
+  }
+  @media only screen and (max-width: 950px) {
+	.footer .col {
+	  width: 33%;
+	}
+	.footer .col h1 {
+	  font-size: 14px;
+	}
+	.footer .col ul li {
+	  font-size: 13px;
+	}
+  }
+  @media only screen and (max-width: 500px) {
+	  .footer .col {
+		width: 50%;
+	  }
+	  .footer .col h1 {
+		font-size: 14px;
+	  }
+	  .footer .col ul li {
+		font-size: 13px;
+	  }
+  }
+  @media only screen and (max-width: 340px) {
+	.footer .col {
+	  width: 100%;
+	}
+  }
+/* footer end */
+
+
+
+
+
+
+
+

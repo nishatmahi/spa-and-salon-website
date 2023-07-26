@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .navigation {
+    height: 80px;
+  }
+  
+  section {
+    scroll-margin-top: 80px;
+  }
+  
+  /* そのほかのCSS */
+  
+  :root {
+    --base-color: rgb(245, 226, 220);
+    --main-color: bisque;
+  }
+  
+  html {
+    font-family: "游ゴシック Medium", YuGothic, YuGothicM,
+      "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    color: black;
+  }
+  
+  body {
+    padding-top: 80px;
+    line-height: 1.7;
+    width: fit-content;
+  }
+  
+  button {
+    font-family: "Lato", sans-serif;
+  }
+  
+  img {
+    max-width: 120%;
+  }
+  
+  .color-button {
+    font-size: 0.875rem;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    color:black;
+    border: none;
+    border-radius: 25px;
+    background-color: #393f43;
+  }
+  
+  main {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .navigation {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    background-color:rgb(245, 223, 220);
+    grid-auto-flow: column;
+  }
+  
+   /* .brand-logo {
+  object-fit: cover;
+    width: 155px;
+    height: 80px;
+    background-image: linear-gradient(to right,white, azure); 
+    place-content: center;
+  }  */
+  
+  .link-list {
+    font-size: 18px;
+    display: grid;
+    justify-content: end;
+    padding-right: 24px;
+    grid-auto-flow: column;
+    gap: 30px;
+  }
+  
+  .link-list a {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+  }
+  
+  section {
+    min-width: 900px;
+    padding: 150px 80px;
+  }
+  
+  .section-title {
+    position: relative;
+    height: 100px;
+    color: black;
+  }
+  
+  .section-title:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100px;
+    height: 3px;
+    content: "";
+    background: linear-gradient(to right, black, rgb(0, 0, 0));
+  }
+  
+  .section-title .en {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+  }
+  
+  /* .section-title .jp {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+  } */
+  
+  .profile {
+    display: grid;
+    background: var(--base-color);
+      /* url(https://assets.codepen.io/221808/profile_title_bg.svg) no-repeat center
+      0; */
+    grid-template:
+      "section-title visual" auto
+      "description visual" auto
+      "nav visual" 1fr /
+      30% 1fr;
+    column-gap: 40px;
+  }
+  
+  .profile hgroup {
+    grid-area: section-title;
+  }
+  
+  .profile p {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    grid-area: description;
+  }
+  
+  
+  .profile figure {
+    grid-area: visual;
+  }
+  .section-title {
+    position: relative;
+    height: 100px;
+    color: black;
+    text-align: center;
+  }
+  
+  .section-title:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100px;
+    height: 3px;
+    content: "";
+    background: linear-gradient(to right, #32b39c 0%, black);
+    left: calc(50% - 50px);
+  }
+  
+  
+  .section-title .en {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+  }
+  /* .gallery .section-title {
+    text-align: center;
+  }
+  
+  .gallery .section-title:after {
+    left: calc(50% - 50px);
+  } */
+  
+  
+  /*  */
+  .body-container {
+    max-width: 1264px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .slider-container {
+    padding: 2rem 0;
+  }
+  .slider_heading{
+    text-align: center;
+  }
+  
+  .card {
+    
+    background: #fff;
+    max-width: 300px;
+       margin: auto;
+     margin-top: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+  }
+  .card:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: azure;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+
+      }
+  
+  .card.advice-card {
+    width: 288px;
+  }
+  
+  .card__content {
+    padding: 1rem;
+    color: #000;
+    min-height: 120px;
+    object-fit: cover;
+  }
+  .slider__cards {
+    margin: 2rem 0;
+    height: 350px;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #ebebeb;
+    object-fit: cover;
+  }
+  
+  .slider__card {
+    scroll-snap-align: start;
+    padding-left: 1rem;
+    position: relative;
+    object-fit: cover;
+  }
+  
+  .slider__button {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 8px;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(4, 25%);
+  }
+  
+  .btn {
+    display: inline-flex;
+    position: relative;  
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 44px;
+    border: none;
+    padding: 7px 16px 8px;
+    text-align: center;
+    color: #000;
+    box-sizing: border-box;
+    font-size: 1.0625rem;
+    text-decoration: none;
+    letter-spacing: .2px;
+    line-height: 1;
+    cursor: pointer;
+    font-weight: 400;
+    background-color: #ebebeb;
+  }
+  /*  */
+  
+  .blog {
+    display: grid;
+    background: var(--base-color)
+       no-repeat center 0;
+    grid-template:
+      "section-title entry" auto
+      "description entry" auto
+      "nav entry" 1fr /
+      30% 1fr;
+    column-gap: 40px;
+  }
+  
+  .blog .description {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    grid-area: description;
+  }
+  
+  .blog nav {
+    grid-area: nav;
+    place-self: center;
+  }
+  
+  .blog .entry-list {
+    display: flex;
+    flex-direction: column;
+    grid-area: entry;
+    gap: 30px;
+  }
+  
+  .entry {
+    font-size: 14px;
+    font-weight: normal;
+    display: grid;
+    max-width: 760px;
+    padding: 10px;
+    background-color: #ffffff;
+    grid-template-columns: 200px 1fr;
+  }
+  
+  .entry .thumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }
+  
+  .entry .entry-body {
+    padding: 16px;
+  }
+  
+  .entry .entry-body h2 {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  .entry .entry-body time {
+    color:black;
+  }
+  
+  .entry .entry-body :is(p, time) {
+    margin-top: 10px;
+  }
+  
+  .entry .read-more p {
+    margin-bottom: 45px;
+    color: var(--main-color);
+  }
+  
+  figcaption {
+    margin-top: 12px;
+  }
+  
