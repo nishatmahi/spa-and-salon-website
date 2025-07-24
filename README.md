@@ -20,7 +20,7 @@ A Laravel-based web application for managing a spa and salon service with user b
 > Upload your screenshots to `screenshots/` folder and update links below
 
 ###  Homepage
-![Homepage](screenshots/homepage.png)
+![Homepage](screenshots/Screenshot 2025-07-25%20005734.png)
 
 ###  Login Page
 ![Login](screenshots/login.png)
