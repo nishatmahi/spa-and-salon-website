@@ -31,7 +31,20 @@ A Laravel-based web application for managing a spa and salon service with user b
 ###  Admin Dashboard
 ![Dashboard](screenshots/dashboard.png)
 ![Dashboard](screenshots/Screenshot%202025-07-25%20011322.png)
+###  User Homepage
+![User Homepage](screenshots/Screenshot%202025-07-25%20005953.png)
+![User Homepage](screenshots/Screenshot%202025-07-25%20010011.png)
+![User Homepage](screenshots/Screenshot%202025-07-25%20010133.png)
 
+###  Packages
+![Packages](screenshots/Screenshot%202025-07-25%20010159.png)
+![Packages](screenshots/Screenshot%202025-07-25%20010245.png)
+###  Booking
+![Booking](screenshots/Screenshot%202025-07-25%20010625.png)
+![Booking](screenshots/Screenshot%202025-07-25%20010822.png)
+###  About Us
+![About Us](screenshots/Screenshot%202025-07-25%20010940.png)
+![About Us](screenshots/Screenshot%202025-07-25%20011002.png)
 ---
 
 ## ⚙️ Installation & Setup
