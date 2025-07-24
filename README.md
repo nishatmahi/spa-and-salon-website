@@ -1,6 +1,8 @@
 #  Spa and Salon Website
 
-A Laravel-based web application for managing a spa and salon service with user booking, admin dashboard, stylist management, and more.
+This is a full-stack web application built using the Laravel PHP framework. It provides functionality for both customers and administrators of a spa and salon business.
+
+The application allows users to browse services, book appointments, and view their reservations. Administrators can manage stylists, service categories, packages, reservations, and users from an internal dashboard.
 
 ---
 
